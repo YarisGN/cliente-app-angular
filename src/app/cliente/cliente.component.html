@@ -1,0 +1,22 @@
+<div class="container my-5" >
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Email</th>
+        <th scope="col">createAt</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let clientes of clientes">
+      <tr>
+        <th scope="row">{{ clientes.id }}</th>
+        <td>{{ clientes.nombre }}</td>
+        <td>{{ clientes.apellido }}</td>
+        <td>{{ clientes.email }}</td>
+        <td>{{ clientes.createAt }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
